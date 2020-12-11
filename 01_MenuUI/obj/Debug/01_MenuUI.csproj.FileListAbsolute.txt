@@ -1,0 +1,10 @@
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\obj\Debug\01_MenuUI.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\obj\Debug\01_MenuUI.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\bin\Debug\01_MenuUI.exe.config
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\bin\Debug\01_MenuUI.exe
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\bin\Debug\01_MenuUI.pdb
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\bin\Debug\01_KomodoCafePOCO.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\bin\Debug\01_KomodoCafePOCO.pdb
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\obj\Debug\01_MenuUI.csproj.CopyComplete
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\obj\Debug\01_MenuUI.exe
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUI\obj\Debug\01_MenuUI.pdb

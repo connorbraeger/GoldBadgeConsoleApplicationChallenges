@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_KomodoCafePOCO\bin\Debug\01_KomodoCafePOCO.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_KomodoCafePOCO\bin\Debug\01_KomodoCafePOCO.pdb
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_KomodoCafePOCO\obj\Debug\01_MenuRepo.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_KomodoCafePOCO\obj\Debug\01_MenuRepo.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_KomodoCafePOCO\obj\Debug\01_KomodoCafePOCO.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_KomodoCafePOCO\obj\Debug\01_KomodoCafePOCO.pdb

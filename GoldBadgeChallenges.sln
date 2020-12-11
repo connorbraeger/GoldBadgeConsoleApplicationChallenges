@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_MenuClass", "01_KomodoCafePOCO\01_MenuClass.csproj", "{C248835C-3E5B-46AB-848F-3D601B9AF91D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_MenuRepo", "01_KomodoCafePOCO\01_MenuRepo.csproj", "{C248835C-3E5B-46AB-848F-3D601B9AF91D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_MenuUnitTests", "01_MenuUnitTests\01_MenuUnitTests.csproj", "{FDD4FF88-6BBA-48F5-A8A8-51069A9620C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_MenuUI", "01_MenuUI\01_MenuUI.csproj", "{8E4CD2EA-D3E5-480F-8052-A14696FEF2C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C248835C-3E5B-46AB-848F-3D601B9AF91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C248835C-3E5B-46AB-848F-3D601B9AF91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C248835C-3E5B-46AB-848F-3D601B9AF91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD4FF88-6BBA-48F5-A8A8-51069A9620C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD4FF88-6BBA-48F5-A8A8-51069A9620C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD4FF88-6BBA-48F5-A8A8-51069A9620C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD4FF88-6BBA-48F5-A8A8-51069A9620C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4CD2EA-D3E5-480F-8052-A14696FEF2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4CD2EA-D3E5-480F-8052-A14696FEF2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4CD2EA-D3E5-480F-8052-A14696FEF2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4CD2EA-D3E5-480F-8052-A14696FEF2C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

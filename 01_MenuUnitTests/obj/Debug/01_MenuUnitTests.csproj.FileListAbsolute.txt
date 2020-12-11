@@ -1,0 +1,16 @@
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\01_MenuUnitTests.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\01_MenuUnitTests.pdb
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\01_KomodoCafePOCO.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\01_KomodoCafePOCO.pdb
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\obj\Debug\01_MenuUnitTests.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\obj\Debug\01_MenuUnitTests.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\obj\Debug\01_MenuUnitTests.csproj.CopyComplete
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\obj\Debug\01_MenuUnitTests.dll
+C:\ElevenFiftyProjects\GoldBadgeFinalProject\01_MenuUnitTests\obj\Debug\01_MenuUnitTests.pdb
