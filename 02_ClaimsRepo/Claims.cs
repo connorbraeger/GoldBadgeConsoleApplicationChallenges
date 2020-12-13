@@ -47,8 +47,9 @@ namespace _02_ClaimsRepo
             }
             ClaimAmout = claimAmount;
             DateOfIncident = dateOfIncident;
-            IsValid = (DateOfClaim.Subtract(DateOfIncident).TotalDays <= 30);
             DateOfClaim = dateOfClaim;
+            IsValid = (DateOfClaim.Subtract(DateOfIncident).TotalDays <= 30);
+
         }
     }
 }

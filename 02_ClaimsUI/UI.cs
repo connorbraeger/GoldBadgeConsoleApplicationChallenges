@@ -163,7 +163,7 @@ namespace _02_ClaimsUI
                         {
                             Claims newClaim = new Claims((TypeOfClaim)typeOfClaim, description, amount, accident, claim);
                             _claimsRepo.AddClaim(newClaim);
-                            keepRunning = true;
+                            keepRunning = false;
                             Console.WriteLine("Claim successfully added.");
                             Console.ReadLine();
                         }
@@ -266,8 +266,8 @@ namespace _02_ClaimsUI
                 {
                     try
                     {
-                        int.TryParse(dateComponetents[0], out int date);
-                        int.TryParse(dateComponetents[1], out int month);
+                        int.TryParse(dateComponetents[0], out int month);
+                        int.TryParse(dateComponetents[1], out int date);
                         int.TryParse(dateComponetents[2], out int year);
                         dateTime = new DateTime(year, month, date);
                         isDate = true;
@@ -277,7 +277,7 @@ namespace _02_ClaimsUI
                     {
                         Console.WriteLine("invalid date format");
                         Console.ReadLine();
-                        break;
+                        
                     }
                 }
             }
