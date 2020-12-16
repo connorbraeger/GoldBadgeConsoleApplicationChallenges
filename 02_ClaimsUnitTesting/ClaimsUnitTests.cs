@@ -28,7 +28,7 @@ namespace _02_ClaimsUnitTesting
         }
 
         [TestMethod]
-        public void TestEmptyConstructor()
+        public void TestEmptyClaimsConstructor()
         {
             Claims claim = new Claims();
             Assert.AreEqual(5,claim.ClaimNumber);
@@ -37,12 +37,14 @@ namespace _02_ClaimsUnitTesting
             Assert.AreEqual(claim.DateOfIncident.Date, claim.DateOfClaim.Date);
         }
         [TestMethod]
-        public void TestNonEmptyConstructor()
+        public void TestNonEmptyClaimsConstructor()
         {
+            
             Assert.IsTrue(_claim1.IsValid);
             Assert.AreEqual(1, _claim1.ClaimNumber);
 
         }
+        
         [TestMethod]
         public void TestAddMethod()
         {

@@ -57,12 +57,23 @@ namespace _03_BadgeUnitTests
             Badge addBadgeFalse = new Badge(1, addList);
             Assert.IsTrue(_repo.AddBadge(addBadgeTrue));
             Assert.IsFalse(_repo.AddBadge(addBadgeFalse));
-
+            Dictionary<int, Badge> addDict = new Dictionary<int, Badge>(_repo.GetBadgeDictionary());
+            bool hasBadge = false;
+            foreach (Badge item in addDict.Values)
+            {
+                if (item == addBadgeTrue)
+                {
+                    hasBadge = true;
+                    break;
+                }
+            }
+            Assert.IsTrue(hasBadge);
         }
         [TestMethod]
         public void TestReadMethod()
         {
             Dictionary<int, Badge> testDictionary = new Dictionary<int, Badge>(_repo.GetBadgeDictionary());
+            Assert.IsNotNull(testDictionary);
             Assert.AreEqual(_badge1, testDictionary[1]);
             Assert.AreEqual(_badge2, testDictionary[2]);
             Assert.AreEqual(_badge3, testDictionary[3]);
