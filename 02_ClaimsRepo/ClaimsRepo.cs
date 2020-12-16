@@ -14,32 +14,28 @@ namespace _02_ClaimsRepo
         }
         Queue<Claims> _claimsQueue = new Queue<Claims>();
 
-        public void AddClaim(Claims newClaim)
+        public bool AddClaim(Claims newClaim)
         {
-
-            _claimsQueue.Enqueue(newClaim);
+            if (_claimsQueue.Contains(newClaim))
+            {
+                return false;
+            }
+            else
+            {
+                _claimsQueue.Enqueue(newClaim);
+                return true;
+            }
         }
         public Queue<Claims> GetClaimsQueue()
         {
             return _claimsQueue;
         }
-        public void RemoveClaim()
+        public void RemoveClaim()//no parameters since it is a queue it will always remove first item in queue
         {
+            
             _claimsQueue.Dequeue();
         }
        
-        public Claims GetByClaimID(int idNum)
-        {
-            foreach (Claims claim in _claimsQueue)
-            {
-                if (claim.ClaimNumber == idNum)
-                {
-                    return claim;
-                }
-            }return null;
-            
-
-            
-        }
+        
     }
 }
