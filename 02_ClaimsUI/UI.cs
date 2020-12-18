@@ -26,7 +26,7 @@ namespace _02_ClaimsUI
                     "1. See all claims\n\n" +
                     "2. Take care of next claim\n\n" +
                     "3. Enter a new claim\n\n" +
-                    "4.Exit program");
+                    "4. Exit program\n");
                 string input = Console.ReadLine().Trim();
                 switch (input)
                 {
@@ -50,7 +50,7 @@ namespace _02_ClaimsUI
                 }
             }
         }
-        public void DisplayClaims()//could implement variable alignment length
+        public void DisplayClaims()
         {
             Console.Clear();
             if (_claimsRepo.GetClaimsQueue().Count == 0)
@@ -81,24 +81,31 @@ namespace _02_ClaimsUI
         public void HandleNextClaim()
         {
             Console.Clear();
-            Console.WriteLine($"Here are the details for the next claim to be handled: \n\n" +
-                $"ClaimID: {_claimsRepo.GetClaimsQueue().Peek().ClaimNumber}\n\n" +
-                $"Type:  {_claimsRepo.GetClaimsQueue().Peek().ClaimType}\n\n " +
-                $"Description:  {_claimsRepo.GetClaimsQueue().Peek().Description}\n\n" +
-                $"Amount  {_claimsRepo.GetClaimsQueue().Peek().ClaimAmout:C}\n\n" +
-                $"DateOfAccident:  {_claimsRepo.GetClaimsQueue().Peek().DateOfIncident:d}\n\n" +
-                $"DateOfClaim:  {_claimsRepo.GetClaimsQueue().Peek().DateOfClaim:d}\n\n" +
-                $"IsValid:  {_claimsRepo.GetClaimsQueue().Peek().IsValid}\n");
-            Console.WriteLine("Do you want to deal with this claim now(y/n)? ");
-            if (GetYesOrNo())
+            if (_claimsRepo.GetClaimsQueue().Count == 0)
             {
-
-                _claimsRepo.RemoveClaim();
-                Console.WriteLine("Press enter to view updated queue\n");
+                Console.WriteLine("No claims in Queue");
                 Console.ReadKey();
-                DisplayClaims();
             }
+            else
+            {
+                Console.WriteLine($"Here are the details for the next claim to be handled: \n\n" +
+                    $"ClaimID: {_claimsRepo.GetClaimsQueue().Peek().ClaimNumber}\n\n" +
+                    $"Type:  {_claimsRepo.GetClaimsQueue().Peek().ClaimType}\n\n " +
+                    $"Description:  {_claimsRepo.GetClaimsQueue().Peek().Description}\n\n" +
+                    $"Amount  {_claimsRepo.GetClaimsQueue().Peek().ClaimAmout:C}\n\n" +
+                    $"DateOfAccident:  {_claimsRepo.GetClaimsQueue().Peek().DateOfIncident:d}\n\n" +
+                    $"DateOfClaim:  {_claimsRepo.GetClaimsQueue().Peek().DateOfClaim:d}\n\n" +
+                    $"IsValid:  {_claimsRepo.GetClaimsQueue().Peek().IsValid}\n");
+                Console.WriteLine("Do you want to deal with this claim now(y/n)? ");
+                if (GetYesOrNo())
+                {
 
+                    _claimsRepo.RemoveClaim();
+                    Console.WriteLine("Press enter to view updated queue\n");
+                    Console.ReadKey();
+                    DisplayClaims();
+                }
+            }
         }
         public void AddNewClaim()
         {
@@ -278,6 +285,11 @@ namespace _02_ClaimsUI
                         Console.WriteLine("invalid date format");
                         Console.ReadLine();
                         
+                    }catch (IndexOutOfRangeException)
+                    {
+                        Console.WriteLine("invalid date format");
+                        Console.ReadLine();
+
                     }
                 }
             }

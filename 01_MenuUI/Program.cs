@@ -125,7 +125,7 @@ namespace _01_MenuUI
                 }
             }
         }
-        public void ViewMenu()//need functionality to sort list after adding deleted item, i.e 1 will display after 3.
+        public void ViewMenu()
         {
             Console.Clear();
             List<MenuItem> sortedList = SortMenu(); 
