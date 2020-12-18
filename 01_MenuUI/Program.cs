@@ -26,10 +26,11 @@ namespace _01_MenuUI
        
         public void  Run()
         {
-            seedMenu();
+            SeedMenu();
             bool keepRunning = true;
             while (keepRunning)
             {
+                Console.Clear();
                 Console.WriteLine("Select a menu option:\n" +
                     "1. Add New Item to Menu\n" +
                     "2. View Menu\n" +
@@ -127,14 +128,11 @@ namespace _01_MenuUI
         public void ViewMenu()//need functionality to sort list after adding deleted item, i.e 1 will display after 3.
         {
             Console.Clear();
-           
-            foreach(var menuItem in _menuRepo.GetMenuList())
+            List<MenuItem> sortedList = SortMenu(); 
+            foreach(var menuItem in sortedList)
             {
-                string allIngredients = "";
-                foreach (string ingred in menuItem.IngredientList)
-                {
-                    allIngredients = allIngredients + ingred + "||";
-                }
+                string allIngredients = String.Join("||", menuItem.IngredientList);
+               
                 Console.WriteLine($"Item #{menuItem.Number}: {menuItem.Name} \n" +
                     $"Price: ${menuItem.Price} \n" +
                     $"Description: {menuItem.Description}\n" +
@@ -144,6 +142,7 @@ namespace _01_MenuUI
                 
                     
             }
+            Console.ReadKey();
         }
         public void DeleteItem()
         {
@@ -218,7 +217,7 @@ namespace _01_MenuUI
             i = 0;
             return false;
         }
-        public void seedMenu()
+        public void SeedMenu()
         {
             List<string> ingredients1 = new List<string>() { "chicken", "butter", "cheese" };
             List<string> ingredients2 = new List<string>() { "pork", "bbq", "onions" };
@@ -231,6 +230,12 @@ namespace _01_MenuUI
             _menuRepo.AddMenuItem(item1);
             _menuRepo.AddMenuItem(item2);
             _menuRepo.AddMenuItem(item3);
+
+        }
+        public List<MenuItem> SortMenu()
+        {
+            List<MenuItem> sortedList = new List<MenuItem>(_menuRepo.GetMenuList());
+            return sortedList.OrderBy(i => i.Number).ToList();
 
         }
     }
