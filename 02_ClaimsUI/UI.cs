@@ -59,7 +59,7 @@ namespace _02_ClaimsUI
             }
             else
             {
-                int negativeDescr = Claims.DescriptionLength * -1;
+                
                 StringBuilder titleRow = new StringBuilder();
                 titleRow.AppendFormat("{0,-7} {1,-5} {2,-40} {3,-15} {4,-14} {5,-12} {6,-7}", "ClaimId", "Type", "Description", "Amount", "DateOfAccident", "DateOfClaim", "IsValid");
 

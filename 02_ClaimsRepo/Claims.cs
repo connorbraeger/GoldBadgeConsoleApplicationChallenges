@@ -15,7 +15,7 @@ namespace _02_ClaimsRepo
     public class Claims
     {
         public static int NextClaim = 1;
-        public static int DescriptionLength = 10;
+       
         public int ClaimNumber { get; set; }
         public TypeOfClaim ClaimType { get; set; }
         public string Description
@@ -41,10 +41,7 @@ namespace _02_ClaimsRepo
             Claims.NextClaim++;
             ClaimType = claimType;
             Description = description;
-            if (description.Length > Claims.DescriptionLength)
-            {
-                Claims.DescriptionLength = description.Length;
-            }
+            
             ClaimAmout = claimAmount;
             DateOfIncident = dateOfIncident;
             DateOfClaim = dateOfClaim;

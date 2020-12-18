@@ -103,8 +103,8 @@ namespace _03_BadgeUnitTests
         {
             List<string> addList = new List<string>() { "room_x", "room_y", "room_z" };
             Badge newBadge = new Badge(5, addList);
-            bool falseDelete = _repo.deleteBadge(newBadge);
-            bool trueDelete = _repo.deleteBadge(_badge1);
+            bool falseDelete = _repo.DeleteBadge(newBadge);
+            bool trueDelete = _repo.DeleteBadge(_badge1);
             Assert.IsTrue(trueDelete);
             Assert.IsFalse(falseDelete);
         }

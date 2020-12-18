@@ -41,7 +41,7 @@ namespace _03_BadgeRepo
                 return true;
             }
         }
-        public bool deleteBadge(Badge badge)
+        public bool DeleteBadge(Badge badge)
         {
             if (!_badgeDictionary.ContainsKey(badge.BadgeID))
             {
